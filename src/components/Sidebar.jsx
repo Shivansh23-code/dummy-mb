@@ -20,7 +20,7 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-brand">MBG CARD</div>
+      <div className="sidebar-brand">Dashboard</div>
       <nav className="sidebar-nav">
         {filteredLinks.map((link, index) => (
           /* Use NavLink for routing and automatic 'active' class handling */

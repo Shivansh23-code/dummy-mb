@@ -23,7 +23,7 @@ const EmployeeList = () => {
     <div className="employee-page">
       <div className="page-header">
         <h2>Team Directory</h2>
-        <button className="add-btn">+ Add New</button>
+        <button className="add-btn">+ Add New Employee</button>
       </div>
 
       <div className="employee-grid">
