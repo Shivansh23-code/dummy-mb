@@ -1,0 +1,73 @@
+.employee-page {
+  animation: slideUp 0.4s ease-out;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.add-btn {
+  background: var(--primary-indigo);
+  color: rgb(3, 3, 3);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.emp-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.emp-card:hover { transform: scale(1.02); }
+
+.emp-avatar {
+  width: 60px;
+  height: 60px;
+  background: rgba(79, 70, 229, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.emp-metrics {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.metric .label { display: block; font-size: 0.75rem; color: var(--text-muted); }
+.metric .value { font-weight: 700; font-size: 1rem; }
+
+.status-ok { color: #10b981; font-weight: 600; }
+.status-bad { color: #ef4444; font-weight: 600; }
+
+.profile-btn {
+  width: 100%;
+  background: transparent;    
+  border: 1px solid var(--primary-indigo);
+  color: var(--primary-indigo);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}

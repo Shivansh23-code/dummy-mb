@@ -1,0 +1,70 @@
+/* Reset body to ensure no unwanted scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f8fafc;
+}
+
+/* 1. The Main Flex Container */
+.app-layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* 2. The Main Content Area */
+.main-content {
+  flex: 1;
+  /* FIX: Assuming sidebar is ~260px wide. This prevents content from hiding underneath it. Adjust this value to exactly match your Sidebar.css width */
+  margin-left: 260px; 
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-width: 0; 
+}
+
+/* 3. Headers */
+.main-header,
+.content-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+
+/* =========================
+   RESPONSIVE FIXES
+========================= */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 1.5rem;
+    margin-left: 240px; /* Slightly smaller margin for tablets if sidebar shrinks */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column; 
+  }
+
+  .main-content {
+    margin-left: 0; /* FIX: Reset margin on mobile since Sidebar usually stacks or hides */
+    padding: 1rem;
+  }
+}
+
+/* Global Glossy Utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}

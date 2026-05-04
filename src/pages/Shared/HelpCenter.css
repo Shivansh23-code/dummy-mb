@@ -1,0 +1,55 @@
+.help-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.help-hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(255, 255, 255, 0.7));
+}
+
+.search-bar {
+  margin-top: 1.5rem;
+  width: 60%;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.support-channels {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.channel {
+  padding: 2.5rem;
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chat-btn, .call-btn, .email-btn, .help-btn, .video-btn, .ai-btn  {
+  margin-top: 1rem;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chat-btn { background: var(--primary-indigo); color: rgb(255, 255, 255); }
+.call-btn { background: #01742d; color: rgb(255, 255, 255); }
+.email-btn{ background: #f38f1c; color: rgb(255, 255, 255); } 
+.help-btn{ background: #f38f1c; color: rgb(255, 255, 255); }
+.video-btn{ background: #836ceb; color: rgb(255, 255, 255); }
+.ai-btn { background: #01a839; color: rgb(255, 255, 255); }
